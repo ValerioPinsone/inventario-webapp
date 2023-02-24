@@ -35,3 +35,48 @@
   color: rgb(255, 255, 255);
   margin: 5px;
 }
+
+.cardButton{
+  color: #fff;
+  border: none;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 2px;
+  width: 46%;
+  cursor: pointer;
+}
+
+.cardButtonRed{
+  color: #fff;
+  border: none;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 2px;
+  width: 46%;
+  background-color: #a00;
+  cursor: pointer;
+}
+
+.cardButtonGreen{
+  color: #fff;
+  border: none;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 2px;
+  width: 46%;
+  background-color: #0a6d3b;
+  cursor: pointer;
+}
+
+.green{
+  background-color: #0a6d3b;
+}
+
+.red{
+  background-color: #a00;
+}
+
+.hr{
+  border: 1px solid #ffffff1e;
+  margin:5px 0;
+}
