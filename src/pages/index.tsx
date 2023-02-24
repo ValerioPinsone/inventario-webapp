@@ -20,6 +20,8 @@ export default function Home() {
      <Navbar/>
       <div className={styles.cardContainer}>
         <Card/>
+        <Card/>
+        <Card/>
       </div>
     
     </>
