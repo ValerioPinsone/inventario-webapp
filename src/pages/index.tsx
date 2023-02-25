@@ -10,23 +10,38 @@ const inter = Inter({ subsets: ['latin'] })
 let products = [
   {
     id: 1,
-    name: "Product 1",
-    quantity: 10,
+    name: "Tubo Plastica",
+    quantity: 58,
   },
   {
     id: 2,
-    name: "Product 2",
-    quantity: 20,
+    name: "Bullone 30mm",
+    quantity: 456,
   },
   {
     id: 3,
-    name: "Product 3",
-    quantity: 30,
+    name: "Guaina Doppio Strato",
+    quantity: 356,
   },
   {
     id: 4,
-    name: "Product 4",
-    quantity: 40,
+    name: "Centralina 12V per cancelli",
+    quantity: 12,
+  },
+  {
+    id: 5,
+    name: "Cavo 2x1.5mm",
+    quantity: 78,
+  },
+  {
+    id: 6,
+    name: "Cavo 2x2.5mm",
+    quantity: 45,
+  },
+  {
+    id: 7,
+    name: "Cavo 2x4mm",
+    quantity: 23,
   }
 ];
 export default function Home() {
