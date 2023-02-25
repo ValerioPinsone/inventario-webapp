@@ -31,10 +31,11 @@
   width: 200px;
 /*   height: 150px; */
   padding: 10px;
-  border: 1px solid #0a6d3b;
+  border: 1px solid #3d3d3d;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  margin: 20px;
+  margin: 10px;
+
 }
 
 .cardButton{
@@ -57,7 +58,7 @@
   background-color: rgba(170, 0, 0, 0.484);
   border: 1px solid #f02222;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .cardButtonGreen{
@@ -70,13 +71,17 @@
   background-color: #0a6d3b6d;
   border: 1px solid #0a6d3b;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 .cardButtonGreen:hover{
   background-color: #0bc668;
+  -webkit-box-shadow: 0px 0px 30px 5px #2efd0057; 
+  box-shadow: 0px 0px 30px 5px #2efd0057;
 }
 .cardButtonRed:hover{
   background-color: #ff3d3d;
+  -webkit-box-shadow: 0px 0px 30px 5px #fd000057; 
+  box-shadow: 0px 0px 30px 5px #fd000057;
 }
 .cardButtonGreen:active{
  position: relative;
@@ -102,5 +107,11 @@
 }
 
 .center{
+/*   position: relative;
+  top:10px; */
   text-align: center;
+}
+.quantity{
+ margin:5px;
+ color: goldenrod;
 }

@@ -7,6 +7,28 @@ import Card from '@/components/Card'
 
 const inter = Inter({ subsets: ['latin'] })
 
+let products = [
+  {
+    id: 1,
+    name: "Product 1",
+    quantity: 10,
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    quantity: 20,
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    quantity: 30,
+  },
+  {
+    id: 4,
+    name: "Product 4",
+    quantity: 40,
+  }
+];
 export default function Home() {
   return (
     <>
@@ -19,9 +41,10 @@ export default function Home() {
       </Head>
      <Navbar/>
       <div className={styles.cardContainer}>
-        <Card/>
-        <Card/>
-        <Card/>
+
+       {products.map((products) => (
+          <Card product={products}/>
+        ))}
       </div>
     
     </>
