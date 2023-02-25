@@ -6,8 +6,10 @@ const Card = () => {
         <div className={styles.card}>
             <h3>Card title</h3>
             <hr className={styles.hr}></hr>
+            <div className={styles.center}>
             <button className={styles.cardButtonRed}>-</button>
             <button className={styles.cardButtonGreen}>+</button>
+            </div>
         </div>
     )
 }
