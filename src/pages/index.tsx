@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React , { useState , useEffect} from "react";
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
@@ -105,7 +106,28 @@ let products = [
     quantity: 12,
   }
 ];
+
+let productsFiltered = products;
+let filtro = "prova";
 export default function Home() {
+
+
+  const [search, setSearch] = useState("");
+  const callback = (payload: any) => {
+    setSearch(payload)
+  }
+
+  useEffect(() => {
+    filtro = search;
+   /*  console.log(filtro); */
+    //filter the products
+/*     productsFiltered = products.filter((product) => {
+      return product.name.toLowerCase().includes(filtro.toLowerCase());
+    }); */
+  }
+  , [search]);
+
+
   return (
     <>
     
@@ -115,10 +137,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     <Navbar/>
+     <Navbar callback={callback}/>
       <div className={styles.cardContainer}>
 
-       {products.map((products) => (
+   
+      
+      
+       {productsFiltered.map((products, filtro) => (
+        
           <Card key={products.id} product={products}/>
         ))}
       </div>

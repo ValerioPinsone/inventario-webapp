@@ -40,7 +40,7 @@
   padding: 10px;
   border: 1px solid #3d3d3d;
   border-radius: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(225, 225, 225);
   margin: 10px;
 
 }
@@ -127,10 +127,10 @@
   width:auto;
   height: 1px;
   margin: 5px auto;
-
- background-color: rgb(38, 255, 0);
- -webkit-box-shadow: 0px 0px 30px 5px #2efd0057; 
- box-shadow: 0px 0px 30px 5px #2efd0057;
+  background-color: rgb(38, 255, 0);
+  -webkit-box-shadow: 0px 0px 30px 5px #2efd0057; 
+  box-shadow: 0px 0px 30px 5px #2efd0057;
+  transition: 0.5s all ease;
 }
 
 .quantityBarRed{
@@ -141,10 +141,10 @@
   width:auto;
   height: 1px;
   margin: 5px auto;
-
- background-color: rgb(255, 0, 0);
- -webkit-box-shadow: 0px 0px 30px 5px #fd000080; 
- box-shadow: 0px 0px 30px 5px #fd000080;
+  background-color: rgb(255, 0, 0);
+  -webkit-box-shadow: 0px 0px 30px 5px #fd000080; 
+  box-shadow: 0px 0px 30px 5px #fd000080;
+  transition: 0.5s all ease;
 }
 
 .quantityBarBlue{
@@ -155,10 +155,10 @@
   width:auto;
   height: 1px;
   margin: 5px auto;
-
- background-color: rgb(0, 153, 255);
- -webkit-box-shadow: 0px 0px 30px 5px #00b2fd80; 
- box-shadow: 0px 0px 30px 5px #00b2fd80;
+  background-color: rgb(0, 153, 255);
+  -webkit-box-shadow: 0px 0px 30px 5px #00b2fd80; 
+  box-shadow: 0px 0px 30px 5px #00b2fd80;
+  transition: 0.5s all ease;
 }
 
 .quantity{
@@ -184,8 +184,11 @@
   color: #475d84;
 /*   overflow-y: scroll; */
   padding: 5px;
+}
 
-
+.textarea:focus{
+  outline: none;
+  border: 0px solid #475d84;
 }
 
 @media screen and (max-width: 550px){
@@ -210,6 +213,17 @@
     backdrop-filter: blur(4px);
    
 
+  }
+
+  .card{
+    height: 220px;
+  }
+  .cardButtonRed{
+    height: 40px;
+  }
+
+  .cardButtonGreen{
+    height: 40px;
   }
 
   .cardContainer{
