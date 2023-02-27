@@ -66,7 +66,7 @@ let products = [
     id: 10,
     name: "Set Chiavi",
     desc: "Set Chiavi",
-    quantity: 12,
+    quantity: 2,
   },
   {
     id: 11,
@@ -84,12 +84,24 @@ let products = [
     id: 13,
     name: "Tubo PVC 75mm",
     desc: "Tubo PVC 75mm",
-    quantity: 12,
+    quantity: 0,
   },
   {
     id: 14,
     name: "Tubo PVC 100mm",
     desc: "Tubo PVC 100mm",
+    quantity: 12,
+  },
+  {
+    id: 15,
+    name: "Plexiglass 1.5m",
+    desc: "Plexiglass 1.5m",
+    quantity: 12,
+  },
+  {
+    id: 16,
+    name: "Plexiglass 2m",
+    desc: "Plexiglass 2m",
     quantity: 12,
   }
 ];
