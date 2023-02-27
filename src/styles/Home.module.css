@@ -179,4 +179,26 @@
   .card{
     width: 100%;
   }
+
+  .searchArea{
+    
+    width: 60%;
+    z-index: 1;
+  }
+
+  .searchArea:focus{
+    width: 80%;
+  }
+  .nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.511);
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+
+  }
+
+  .cardContainer{
+    padding-top: 90px;
+  }
 }
