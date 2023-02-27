@@ -17,7 +17,9 @@ const Card: React.FC<any> = ({product}) => {
         {/* <h5 className={styles.quantity}>QTY: {product.quantity}</h5> */}
         
         <div className={styles.card}>
-        <div className={styles.quantityBarRed}></div>
+            {/* className = stylesQuantityBarBlue if product.quantity>3 */}
+
+        <div className={ (product.quantity>3 ? styles.quantityBarBlue : styles.quantityBarRed)}></div>
         <div className={styles.quantity}>{product.quantity}</div>
         <div className={styles.center}>
             <h3>{product.name}</h3>

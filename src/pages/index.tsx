@@ -18,13 +18,13 @@ let products = [
     id: 2,
     name: "Bullone 30mm",
     desc: "Bullone da 30mm",
-    quantity: 456,
+    quantity: 2,
   },
   {
     id: 3,
     name: "Guaina Doppio Strato",
     desc: "Guaina doppio strato da 1.5m",
-    quantity: 356,
+    quantity: 3,
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ let products = [
     id: 7,
     name: "Cavo 2x4mm",
     desc: "Cavo 2x4mm",
-    quantity: 23,
+    quantity: 1,
   },
   {
     id: 8,
