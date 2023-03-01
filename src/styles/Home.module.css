@@ -33,6 +33,39 @@
 
 }
 
+.buttonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  
+  margin: 5px;
+  padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  top:6px;
+}
+.buttonAddNew{
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 2px;
+  width: 150px;
+  background-color: #0a6d3b6d;
+  border: 1px solid #0a6d3b;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.buttonAddNew:hover{
+  background-color: #0bc668;
+  -webkit-box-shadow: 0px 0px 30px 5px #2efd0057; 
+  box-shadow: 0px 0px 30px 5px #2efd0057;
+}
+.buttonAddNew:active{
+ position: relative;
+ top:1px;
+}
 .card{
   background-color:  rgb(11 11 19) ;
   min-width: 200px;
@@ -191,6 +224,25 @@
   border: 0px solid #475d84;
 }
 
+.addicon{
+  font-size: 16px;
+  position: relative;
+  top:3px;
+  left:-4px;
+}
+
+@media screen and (max-width: 1028px){
+
+  
+  .buttonContainer{
+    justify-content: center;
+   }
+  
+   .buttonAddNew{
+    width: 80%;
+    text-align: center;
+   }
+}
 @media screen and (max-width: 550px){
   .card{
     width: 100%;
@@ -229,4 +281,29 @@
   .cardContainer{
     padding-top: 90px;
   }
+
+/* .buttonContainer{
+  position: fixed;
+  bottom: 0;
+  width: 100%; CSS PER ERRORE HOVER
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.317);
+  backdrop-filter: blur(4px);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ */
+
+ .buttonContainer{
+  position:relative;
+  top:80px;
+  justify-content: center;
+ }
+
+ .buttonAddNew{
+  width: 90%;
+  text-align: center;
+ }
 }
