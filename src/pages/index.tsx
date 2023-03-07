@@ -21,6 +21,10 @@ export default function Home() {
     setSearch(payload)
   }
 
+  const callBackSetAddNewModal = (payload: any) => {
+    setAddNewModal(payload)
+  }
+
 
   useEffect(() => {
     filtro = search; //filtro tornato dalla searchbar (da usare in nella chiamata be)
@@ -58,7 +62,7 @@ export default function Home() {
       </Head>
      <Navbar callback={callback}/>
       {/* {addNewModal && <AddNewModal/>} */}
-      {addNewModal ? <AddNewModal/> : null}
+      {addNewModal ? <AddNewModal callback={callBackSetAddNewModal}/> : null}
 
  {/* <AddNewModal/> */}
       <div className={styles.buttonContainer}>
