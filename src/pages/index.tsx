@@ -10,15 +10,17 @@ import AddNewModal from '@/components/AddNewModal'
 const inter = Inter({ subsets: ['latin'] })
 
 let filtro = "prova";
-let addNewModal = true;
+/* let addNewModal = false; */
 export default function Home() {
   
 
+  const [addNewModal, setAddNewModal] = useState(false);
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   const callback = (payload: any) => {
     setSearch(payload)
   }
+
 
   useEffect(() => {
     filtro = search; //filtro tornato dalla searchbar (da usare in nella chiamata be)
@@ -55,12 +57,14 @@ export default function Home() {
       rel="stylesheet"></link>
       </Head>
      <Navbar callback={callback}/>
-      {addNewModal && <AddNewModal/>}
+      {/* {addNewModal && <AddNewModal/>} */}
+      {addNewModal ? <AddNewModal/> : null}
 
  {/* <AddNewModal/> */}
       <div className={styles.buttonContainer}>
         <button className={styles.buttonAddNew} onClick={function(){ 
-          addNewModal = !addNewModal;
+          setAddNewModal(!addNewModal);
+          
           console.log(addNewModal);
           }}><span className={["material-icons", styles.addicon].join(' ')}>add_circle</span>Aggiungi Nuovo</button>
       </div>
