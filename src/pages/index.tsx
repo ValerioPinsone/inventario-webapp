@@ -5,10 +5,12 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Card from '@/components/Card'
+import AddNewModal from '@/components/AddNewModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
 let filtro = "prova";
+let addNewModal = true;
 export default function Home() {
   
 
@@ -53,8 +55,14 @@ export default function Home() {
       rel="stylesheet"></link>
       </Head>
      <Navbar callback={callback}/>
+      {addNewModal && <AddNewModal/>}
+
+ {/* <AddNewModal/> */}
       <div className={styles.buttonContainer}>
-        <button className={styles.buttonAddNew}><span className={["material-icons", styles.addicon].join(' ')}>add_circle</span>Aggiungi Nuovo</button>
+        <button className={styles.buttonAddNew} onClick={function(){ 
+          addNewModal = !addNewModal;
+          console.log(addNewModal);
+          }}><span className={["material-icons", styles.addicon].join(' ')}>add_circle</span>Aggiungi Nuovo</button>
       </div>
      
       <div className={styles.cardContainer}>
