@@ -8,17 +8,24 @@ const AddNewModal: React.FC<any> = () => {
             <div className={styles.addNewModalContent}>
             <h1 className={styles.addNewModalTitle}>Aggiungi Nuovo Prodotto</h1>
             
-            <hr></hr>
+            <hr className={styles.addNewModalHr}></hr>
             <div className={styles.addNewModalForm}>
+                
                 <label className={styles.addNewModalLabel}>Nome</label>
                 <input type="text" name="name" placeholder="Nome Prodotto" className={styles.addNewModalInputText}></input>
-                <label>Descrizione</label>
-                <input type="text" name="description" placeholder="Descrizione Prodotto" className={styles.addNewModalInputTextArea}></input>
+                <br></br>
                 <label>Quantità</label>
                 <input type="number" name="quantity" placeholder="Quantità Prodotto" className={styles.addNewModalInputNumber}></input>
+                <br></br>
+                <label>Descrizione</label>
+                <input type="text" name="description" placeholder="Descrizione Prodotto" className={styles.addNewModalInputTextArea}></input>
 
-                <button className={styles.addNewModalButtonAdd}>Aggiungi</button>
-                <button className={styles.addNewModalButtonUndo}>Annulla</button>
+
+                <div className={styles.addNewModalButtonsContainer}>
+                    <button className={styles.addNewModalButtonUndo}>Annulla</button>
+                    <button className={styles.addNewModalButtonAdd}>Aggiungi</button>
+                </div>
+                
             </div>
             </div>
         </div>
