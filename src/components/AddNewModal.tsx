@@ -1,7 +1,8 @@
 import React , { useState } from "react";
 import styles from '@/styles/Home.module.css'
 
-const AddNewModal: React.FC<any> = () => {
+const AddNewModal: React.FC<any> = ({callback}) => {
+    const handleCallback = () => callback(false);
     return (
         <>
         <div className={styles.addNewModal}>
@@ -22,8 +23,13 @@ const AddNewModal: React.FC<any> = () => {
 
 
                 <div className={styles.addNewModalButtonsContainer}>
-                    <button className={styles.addNewModalButtonUndo}>Annulla</button>
-                    <button className={styles.addNewModalButtonAdd}>Aggiungi</button>
+                    <button className={styles.addNewModalButtonUndo} onClick={function(){
+                        handleCallback();
+                    }}>Annulla</button>
+
+                    <button className={styles.addNewModalButtonAdd}onClick={function(){
+                        handleCallback();
+                    }}>Aggiungi</button>
                 </div>
                 
             </div>
